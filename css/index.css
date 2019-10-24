@@ -1,0 +1,150 @@
+body{
+    background: linear-gradient(#2e2e2e, rgb(0, 0, 0));
+    height: 525px;
+}
+.poll{
+    margin-top: 200px;
+}
+
+.field{
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 40%;
+    height: 50px;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 40%;
+    margin-left: 30%;
+    display: inline-block;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+.button
+.button::before,
+.button::after
+{
+  transition: all ease .5s;
+}
+
+.button{
+  position: relative;
+  padding: 0.3em;
+  border: solid 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: yellow;
+    display: flex;
+    box-align: center;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.button:hover
+{
+  box-shadow: 0 0 5em .5em rgba(255, 255, 255, 0.5);
+}
+
+.button a
+{
+  text-decoration-line: none;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-size: 20px;
+  display: flex;
+  width: 48%;
+  padding: 0.6em 2em;
+
+
+}
+
+.button:hover a
+{
+  background-color: #fff;
+  color: #112;
+}
+
+.button::before,
+.button::after,
+.button a::before,
+.button a::after
+{
+  content: '';
+  position: absolute;
+  border: 1px;
+}
+
+.button::before,
+.button a::before
+{
+  border-style: solid none;
+}
+
+.button::before,
+.button a::after{
+  left: 0;
+  top: -0.4em;
+  width: 100%;
+  height: calc(100% + 0.8em);
+}
+
+.button::after,
+.button a::after
+{
+  border-style: none solid;
+}
+
+.button::after,
+.button a::before
+{
+  top: 0;
+  left: -0.4em;
+  height: 100%;
+  width: calc(100% + 0.8em);
+}
+
+.button:hover::after,
+.button:hover a::after
+{
+  transform: scaleY(0);
+}
+
+.button:hover::before,
+.button:hover a::before
+{
+  transform: scaleX(0);
+}
+
+.button:hover a::after,
+.button:hover a::before
+{
+  opacity: 0;
+}
