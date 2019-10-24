@@ -2,6 +2,26 @@ body{
     background: linear-gradient(#2e2e2e, rgb(0, 0, 0));
     height: 525px;
 }
+@media (min-width: 350px) {
+    body {
+        height: 650px;
+    }
+}
+@media (min-width: 760px) {
+    body {
+        height: 850px;
+    }
+}
+@media (min-width: 1020px) {
+    body {
+        height: 1340px;
+    }
+}
+@media (min-width: 1090px) {
+    body {
+        height: 600px;
+    }
+}
 .poll{
     margin-top: 200px;
 }
@@ -13,6 +33,11 @@ body{
     border-radius: 10px;
     width: 40%;
     height: 50px;
+}
+p{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
 }
 .slider {
     -webkit-appearance: none;
