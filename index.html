@@ -11,10 +11,36 @@
 <body>
     <div class="poll">
         <form action="https://formspree.io/hr.andriygtr@gmail.com" method="POST">
-            <input class="field" type="text" name="ПІБ викладача" placeholder="ПІБ викладача">
-            <textarea rows="7" cols="2" class="field" type="text" name="Відгук" placeholder="Ваш відгук"></textarea>
-            <p>😡Ваша оцінка🥰</p>
-            <input type="range" name="Оцінка (0-100)" min="1" max="100" value="50" class="slider" id="myRange">
+            <select class="field" required onchange="with (this) if (selectedIndex)
+                document.getElementById ('out').value = options [selectedIndex].value">
+                <option >Оберіть інститут</option>
+                <option id="igsn" value="1">Інститут гуманітарних та соціальних наук</option>
+                <option id="iarh" value="2">Інститут архітектури</option>
+                <option id="ibid" value="3">Інститут будівництва та інженерії довкілля</option>
+                <option id="igdg" value="4">Інститут геодезії</option>
+                <option id="idn"  value="5">Інститут дистанційного навчання</option>
+                <option id="istr" value="6">Інститут сталого розвитку ім. В.Чорновола</option>
+                <option id="inem" value="7">Інститут економіки і менеджменту</option>
+                <option id="iesk" value="8">Інститут енергетики та систем керування</option>
+                <option id="iimt" value="9">Інститут інженерної механіки та транспорту</option>
+                <option id="ikni" value="10">Інститут комп'ютерних наук та інформаційних технологій</option>
+                <option id="ikta" value="11">Інститут комп'ютерних технологій, автоматики та метрології</option>
+                <option id="ippt" value="12">Інститут підприємництва та перспективних технологій</option>
+                <option id="iaps" value="13">Інститут адміністрування та післядипломної освіти</option>
+                <option id="ippi" value="14">Інститут права, психології та інноваційної освіти</option>
+                <option id="ipmf" value="15">Інститут прикладної математики та фундаментальних наук</option>
+                <option id="itre" value="16">Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
+                <option id="ihht" value="17">Інститут хімії та хімічних технологій</option>
+            </select>
+            <!--<input id="out">-->
+            <select class="field" required>
+                <option >Оберіть Спеціальність</option>
+
+            </select>
+            <input required class="field" type="text" name="ПІБ викладача" placeholder="ПІБ викладача">
+            <textarea required rows="7" cols="2" class="field" type="text" name="Відгук" placeholder="Ваш відгук"></textarea>
+            <p>1  2  3  4  5  6  7  8  9  10</p>
+            <input type="range" name="Оцінка (0-10)" min="1" max="10" value="5" class="slider" id="myRange">
             <br>
             <input class="button" type="submit" value="Відправити">
         </form>

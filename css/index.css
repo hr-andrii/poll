@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(#2e2e2e, rgb(0, 0, 0));
+    background: linear-gradient(#1944bb, rgb(226, 219, 219));
     height: 525px;
 }
 @media (min-width: 350px) {
@@ -83,7 +83,7 @@ p{
   border: solid 1px;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: yellow;
+  background-color: #ffffff;
     display: flex;
     box-align: center;
     width: 150px;
