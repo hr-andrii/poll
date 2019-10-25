@@ -2,7 +2,7 @@
 <html lang="UA">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wvalueth=device-wvalueth, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
@@ -11,36 +11,32 @@
 <body>
     <div class="poll">
         <form action="https://formspree.io/hr.andriygtr@gmail.com" method="POST">
-            <select class="field" required onchange="with (this) if (selectedIndex)
-                document.getElementById ('out').value = options [selectedIndex].value">
-                <option >Оберіть інститут</option>
-                <option id="igsn" value="1">Інститут гуманітарних та соціальних наук</option>
-                <option id="iarh" value="2">Інститут архітектури</option>
-                <option id="ibid" value="3">Інститут будівництва та інженерії довкілля</option>
-                <option id="igdg" value="4">Інститут геодезії</option>
-                <option id="idn"  value="5">Інститут дистанційного навчання</option>
-                <option id="istr" value="6">Інститут сталого розвитку ім. В.Чорновола</option>
-                <option id="inem" value="7">Інститут економіки і менеджменту</option>
-                <option id="iesk" value="8">Інститут енергетики та систем керування</option>
-                <option id="iimt" value="9">Інститут інженерної механіки та транспорту</option>
-                <option id="ikni" value="10">Інститут комп'ютерних наук та інформаційних технологій</option>
-                <option id="ikta" value="11">Інститут комп'ютерних технологій, автоматики та метрології</option>
-                <option id="ippt" value="12">Інститут підприємництва та перспективних технологій</option>
-                <option id="iaps" value="13">Інститут адміністрування та післядипломної освіти</option>
-                <option id="ippi" value="14">Інститут права, психології та інноваційної освіти</option>
-                <option id="ipmf" value="15">Інститут прикладної математики та фундаментальних наук</option>
-                <option id="itre" value="16">Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
-                <option id="ihht" value="17">Інститут хімії та хімічних технологій</option>
+            <select class="field" id="institute" name="institute">
+                <option value="choose" selected>Оберіть інститут</option>
+                <option value="igsn">Інститут гуманітарних та соціальних наук</option>
+                <option value="iarh">Інститут архітектури</option>
+                <option value="ibid">Інститут будівництва та інженерії довкілля</option>
+                <option value="igdg">Інститут геодезії</option>
+                <option value="idn" >Інститут дистанційного навчання</option>
+                <option value="istr">Інститут сталого розвитку ім. В.Чорновола</option>
+                <option value="inem">Інститут економіки і менеджменту</option>
+                <option value="iesk">Інститут енергетики та систем керування</option>
+                <option value="iimt">Інститут інженерної механіки та транспорту</option>
+                <option value="ikni">Інститут комп'ютерних наук та інформаційних технологій</option>
+                <option value="ikta">Інститут комп'ютерних технологій, автоматики та метрології</option>
+                <option value="ippt">Інститут підприємництва та перспективних технологій</option>
+                <option value="iaps">Інститут адміністрування та післядипломної освіти</option>
+                <option value="ippi">Інститут права, психології та інноваційної освіти</option>
+                <option value="ipmf">Інститут прикладної математики та фундаментальних наук</option>
+                <option value="itre">Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
+                <option value="ihht">Інститут хімії та хімічних технологій</option>
             </select>
-            <!--<input id="out">-->
-            <select class="field" required>
-                <option >Оберіть Спеціальність</option>
-
+            <select class="field" name="specialty" id="specialty">
             </select>
             <input required class="field" type="text" name="ПІБ викладача" placeholder="ПІБ викладача">
             <textarea required rows="7" cols="2" class="field" type="text" name="Відгук" placeholder="Ваш відгук"></textarea>
             <p>1  2  3  4  5  6  7  8  9  10</p>
-            <input type="range" name="Оцінка (0-10)" min="1" max="10" value="5" class="slider" id="myRange">
+            <input type="range" name="Оцінка (0-10)" min="1" max="10" value="5" class="slvalueer" value="myRange">
             <br>
             <input class="button" type="submit" value="Відправити">
         </form>
@@ -48,6 +44,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/slider.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
