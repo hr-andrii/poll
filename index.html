@@ -11,13 +11,12 @@
 <body>
     <div class="poll">
         <form action="https://formspree.io/hr.andriygtr@gmail.com" method="POST">
-            <select class="field" id="institute" name="institute">
-                <option value="choose" selected>Оберіть інститут</option>
+            <select class="field" name="institute" id="institute">
+                <option value="choose" selected disabled>Оберіть інститут</option>
                 <option value="igsn">Інститут гуманітарних та соціальних наук</option>
                 <option value="iarh">Інститут архітектури</option>
                 <option value="ibid">Інститут будівництва та інженерії довкілля</option>
                 <option value="igdg">Інститут геодезії</option>
-                <option value="idn" >Інститут дистанційного навчання</option>
                 <option value="istr">Інститут сталого розвитку ім. В.Чорновола</option>
                 <option value="inem">Інститут економіки і менеджменту</option>
                 <option value="iesk">Інститут енергетики та систем керування</option>
@@ -25,18 +24,31 @@
                 <option value="ikni">Інститут комп'ютерних наук та інформаційних технологій</option>
                 <option value="ikta">Інститут комп'ютерних технологій, автоматики та метрології</option>
                 <option value="ippt">Інститут підприємництва та перспективних технологій</option>
-                <option value="iaps">Інститут адміністрування та післядипломної освіти</option>
-                <option value="ippi">Інститут права, психології та інноваційної освіти</option>
-                <option value="ipmf">Інститут прикладної математики та фундаментальних наук</option>
+                <option value="iapo">Інститут адміністрування та післядипломної освіти</option>
+                <option value="ippo">Інститут права, психології та інноваційної освіти</option>
+                <option value="imfn">Інститут прикладної математики та фундаментальних наук</option>
                 <option value="itre">Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
                 <option value="ihht">Інститут хімії та хімічних технологій</option>
             </select>
             <select class="field" name="specialty" id="specialty">
+
             </select>
             <input required class="field" type="text" name="ПІБ викладача" placeholder="ПІБ викладача">
             <textarea required rows="7" cols="2" class="field" type="text" name="Відгук" placeholder="Ваш відгук"></textarea>
-            <p>1  2  3  4  5  6  7  8  9  10</p>
-            <input type="range" name="Оцінка (0-10)" min="1" max="10" value="5" class="slvalueer" value="myRange">
+            <div>
+                <p class="value">0</p>
+                <p class="value">1</p>
+                <p class="value">2</p>
+                <p class="value">3</p>
+                <p class="value">4</p>
+                <p class="value">5</p>
+                <p class="value">6</p>
+                <p class="value">7</p>
+                <p class="value">8</p>
+                <p class="value">9</p>
+                <p class="value">10</p>
+            </div>
+            <input type="range" name="Оцінка (0-10)" min="0" max="10" value="5" class="slider" value="myRange">
             <br>
             <input class="button" type="submit" value="Відправити">
         </form>
