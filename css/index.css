@@ -151,57 +151,32 @@ p{
   box-shadow: 0 0 5em .5em rgba(255, 255, 255, 0.5);
 }
 
-.button a
-{
-  text-decoration-line: none;
-  text-transform: uppercase;
-  color: var(--accent-color);
-  font-size: 20px;
-  display: flex;
-  width: 48%;
-  padding: 0.6em 2em;
-
-
-}
-
-.button:hover a
-{
-  background-color: #fff;
-  color: #112;
-}
-
 .button::before,
-.button::after,
-.button a::before,
-.button a::after
+.button::after
 {
   content: '';
   position: absolute;
   border: 1px;
 }
 
-.button::before,
-.button a::before
+.button::before
 {
   border-style: solid none;
 }
 
-.button::before,
-.button a::after{
+.button::before{
   left: 0;
   top: -0.4em;
   width: 100%;
   height: calc(100% + 0.8em);
 }
 
-.button::after,
-.button a::after
+.button::after
 {
   border-style: none solid;
 }
 
-.button::after,
-.button a::before
+.button::after
 {
   top: 0;
   left: -0.4em;
@@ -209,20 +184,12 @@ p{
   width: calc(100% + 0.8em);
 }
 
-.button:hover::after,
-.button:hover a::after
+.button:hover::after
 {
   transform: scaleY(0);
 }
 
-.button:hover::before,
-.button:hover a::before
+.button:hover::before
 {
   transform: scaleX(0);
-}
-
-.button:hover a::after,
-.button:hover a::before
-{
-  opacity: 0;
 }
