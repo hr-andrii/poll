@@ -4,17 +4,27 @@ body{
 }
 @media (min-width: 350px) {
     body {
+        height: 600px;
+    }
+}
+@media (min-width: 370px) {
+    body {
         height: 650px;
+    }
+}
+@media (min-width: 400px) {
+    body {
+        height: 700px;
     }
 }
 @media (min-width: 760px) {
     body {
-        height: 1200px;
+        height: 900px;
     }
 }
 @media (min-width: 1020px) {
     body {
-        height: 1340px;
+        height: 1240px;
     }
 }
 @media (min-width: 1090px) {
@@ -23,8 +33,9 @@ body{
     }
 }
 .poll{
-    margin-top: 200px;
+    margin-top: 150px;
 }
+
 .poll form div{
     margin-left: 30%;
 }
