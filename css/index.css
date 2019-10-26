@@ -41,6 +41,41 @@ body{
     display: inline-block;
     margin-right: 4.2%;
 }
+@media (max-width: 1199px) {
+    .value {
+        margin-right: 3.9%;
+    }
+}
+@media (max-width: 1024px) {
+    .value {
+        margin-right: 3.5%;
+    }
+}
+@media (max-width: 768px) {
+    .value {
+        margin-right: 2.9%;
+    }
+}
+@media (max-width: 414px) {
+    .value {
+        margin-right: 0.5%;
+    }
+}
+@media (max-width: 375px) {
+    .value {
+        margin-right: 0;
+    }
+}
+@media (max-width: 360px) {
+    .value {
+        margin-right: -0.2%;
+    }
+}
+@media (max-width: 320px) {
+    .value {
+        margin-right: -1%;
+    }
+}
 p{
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
