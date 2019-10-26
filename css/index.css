@@ -9,7 +9,7 @@ body{
 }
 @media (min-width: 760px) {
     body {
-        height: 850px;
+        height: 1200px;
     }
 }
 @media (min-width: 1020px) {
