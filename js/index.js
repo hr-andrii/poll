@@ -1,4 +1,4 @@
-var specialties = {
+let specialties = {
     igsn: ["Музеєзнавство, пам’яткознавство","Інформаційна, бібліотечна та архівна справа", "Міжнародні відносини, суспільні комунікації та регіональні студії", "Соціальна забезпечення", "Соціологія", "Соціальна робота"],
     iarh: ["Архітектура та містобудування","Дизайн","Образотворче мистецтво, декоративне мистецтво, реставрація"],
     ibid: ["Будівництво та цивільна інженерія","Пожежна безпека","Гідротехнічне будівництво, водна інженерія та водні технології"],
@@ -16,14 +16,14 @@ var specialties = {
     itre: ["Інформаційно-комунікаційні системи","Телекомунікаційні технології","Біомедична інженерія","Електроніка","Мікро- та наносистемна техніка"],
     ihht: ["Харчові технології","Хімічні технології та інженерія","Біотехнології та біоінженерія","Фармація, промислова фармація"]
 };
-var institute = document.getElementById("institute");
-var specialty = document.querySelector("#specialty");
+let institute = document.getElementById("institute");
+let specialty = document.querySelector("#specialty");
 window.onload = selectInstitute;
 institute.onchange = selectInstitute;
 
 function selectInstitute(ev){
   specialty.innerHTML = "";
-  var c = this.value;
+  let c = this.value;
   for(let i = 0; i < specialties[c].length; i++){
     o = new Option(specialties[c][i],i,false,false);
     specialty.add(o);
