@@ -30,11 +30,11 @@
                 <option value="itre">Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
                 <option value="ihht">Інститут хімії та хімічних технологій</option>
             </select>
-            <select class="field" name="specialty" id="specialty">
+            <select required class="field" name="specialty" id="specialty">
 
             </select>
             <input required class="field" type="text" name="ПІБ викладача" placeholder="ПІБ викладача">
-            <textarea required rows="7" cols="5" class="field" type="text" name="Відгук" placeholder="Ваш відгук"></textarea>
+            <textarea type="text" rows="5" cols="30" minlength="0" maxlength="365" class="field" name="Відгук" placeholder="Ваш відгук (0-365 символів)" required></textarea>
             <div>
                 <p class="value">0</p>
                 <p class="value">1</p>
