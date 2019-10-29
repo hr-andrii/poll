@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="UA">
+<html lang="UK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
 <body>
     <div class="poll">
-        <img src="img/logo.png">
+        <a href="">
+            <h1 class="theme_of_page">Форма для оціювання якості викладання</h1>
+            <h1 class="name_of_univers">Національний університет "Львівська політехніка"</h1>
+            <img src="img/logo.png" alt="Логотип НУЛП, щоб перейти на сайт натисніть">
+
+        </a>
         <form action="https://formspree.io/hr.andriygtr@gmail.com" method="POST">
             <select class="field" name="institute" id="institute">
                 <option value="choose" disabled selected>Оберіть інститут</option>
@@ -31,13 +36,11 @@
                 <option value="itre">Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
                 <option value="ihht">Інститут хімії та хімічних технологій</option>
             </select>
-            <select required class="field" name="specialty" id="specialty">
-
+            <select class="field" name="specialty" id="specialty" required >
             </select>
-            <select required class="field" name="teacher" id="teacher" aria-placeholder="ПІБ викладача">
-
+            <select class="field" name="teacher" id="teacher" required >
             </select>
-            <textarea type="text" rows="5" cols="30" minlength="0" maxlength="365" class="field" name="Відгук" placeholder="Ваш відгук (0-365 символів)" required></textarea>
+            <textarea rows="5" cols="30" minlength="0" maxlength="365" class="field_text" name="Відгук" placeholder="Ваш відгук (0-365 символів)" required></textarea>
             <div>
                 <p class="value">0</p>
                 <p class="value">1</p>
@@ -51,16 +54,12 @@
                 <p class="value">9</p>
                 <p class="value">10</p>
             </div>
-            <input type="range" name="Оцінка (0-10)" min="0" max="10" value="5" class="slider" value="myRange">
+            <input type="range" name="Оцінка (0-10)" min="0" max="10" value="5" class="slider">
             <br>
-            <input class="button" type="submit" value="Відправити">
+            <button class="button">Відправити</button>
         </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/search.js"></script>
+    
     <script src="js/index.js"></script>
 </body>
 </html>
