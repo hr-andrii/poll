@@ -13,7 +13,7 @@
         <img src="img/logo.png">
         <form action="https://formspree.io/hr.andriygtr@gmail.com" method="POST">
             <select class="field" name="institute" id="institute">
-                <option value="choose" selected disabled>Оберіть інститут</option>
+                <option value="choose" disabled selected>Оберіть інститут</option>
                 <option value="igsn">Інститут гуманітарних та соціальних наук</option>
                 <option value="iarh">Інститут архітектури</option>
                 <option value="ibid">Інститут будівництва та інженерії довкілля</option>
@@ -34,7 +34,9 @@
             <select required class="field" name="specialty" id="specialty">
 
             </select>
-            <input required class="field_name" type="text" name="ПІБ викладача" placeholder="ПІБ викладача">
+            <select required class="field" name="teacher" id="teacher" aria-placeholder="ПІБ викладача">
+
+            </select>
             <textarea type="text" rows="5" cols="30" minlength="0" maxlength="365" class="field" name="Відгук" placeholder="Ваш відгук (0-365 символів)" required></textarea>
             <div>
                 <p class="value">0</p>
