@@ -1,10 +1,10 @@
 body{
-    background: linear-gradient(#1944bb, rgb(226, 219, 219));
+    background: linear-gradient(rgb(226, 219, 219),#1944bb);
     height: 525px;
 }
-@media (min-width: 350px) {
+@media (min-width: 320px) {
     body {
-        height: 600px;
+        height: 670px;
     }
 }
 @media (min-width: 370px) {
@@ -12,35 +12,57 @@ body{
         height: 650px;
     }
 }
-@media (min-width: 400px) {
+@media (min-width: 410px) {
     body {
-        height: 700px;
+        height: 738px;
     }
 }
-@media (min-width: 760px) {
+@media (min-height: 811px) {
     body {
-        height: 900px;
+        height: 815px;
     }
 }
-@media (min-width: 1020px) {
+@media (min-height: 1024px) {
     body {
-        height: 1240px;
+        height: 1026px;
     }
 }
-@media (min-width: 1090px) {
+@media (min-height: 1335px) {
     body {
-        height: 600px;
+        height: 1340px;
     }
-}
-.poll{
-    margin-top: 150px;
 }
 
+@media (min-width: 1090px) {
+    body {
+        height: 750px;
+    }
+}
+.logo img{
+    width: 100px;
+}
+.poll{
+    margin-top: 30px;
+}
+.poll img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
 .poll form div{
     margin-left: 30%;
 }
 
 .field{
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 40%;
+    height: 50px;
+}
+.field_name{
     margin: auto;
     display: block;
     margin-bottom: 20px;
